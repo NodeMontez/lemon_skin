@@ -91,10 +91,8 @@
 
     <h3><lang en="Sign in" fr="Connexion" /></h3>
     <div data-alert class="alert-box error">
-      <strong>Error:</strong> <TMPL_VAR NAME="AUTH_ERROR">
-      <a href="#" class="close">&times;</a>
+      <TMPL_VAR NAME="AUTH_ERROR">
     </div>
-    {*<p><span class="text-error"><TMPL_VAR NAME="AUTH_ERROR"></span></p>*}
     <form action="#" method="post" class="login">
       <TMPL_VAR NAME="HIDDEN_INPUTS">
       <input type="hidden" name="url" value="<TMPL_VAR NAME="AUTH_URL">" />
