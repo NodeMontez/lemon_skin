@@ -85,12 +85,11 @@
     <TMPL_IF NAME="LOGIN_INFO">
     <div data-alert class="alert-box">
       <strong>Info:</strong> <TMPL_VAR NAME="LOGIN_INFO">
-      <a href="#" class="close">&times;</a>
     </div>
     </TMPL_IF>
 
     <h3><lang en="Sign in" fr="Connexion" /></h3>
-    <div data-alert class="alert-box error">
+    <div data-alert class="alert-box alert">
       <TMPL_VAR NAME="AUTH_ERROR">
     </div>
     <form action="#" method="post" class="login">
