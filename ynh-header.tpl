@@ -38,7 +38,7 @@
   <div class="tool-bar-wrapper">
     <ul class="left">
       <li class="name">
-          <h1><a class="brand" href="/"><span class="logo-white">YUNOHOST</span></a></h1>
+          <h1><a class="brand" href="#"><span class="logo-white">YUNOHOST</span></a></h1>
       </li>
     </ul>
   </div>
