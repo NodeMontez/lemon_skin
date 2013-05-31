@@ -18,7 +18,7 @@
         <TMPL_IF NAME="CHECK_LOGINS">
         <div class="row">
             <div class="large-11 columns" style="text-align: right">
-                <label for="checkLogins">
+                <label for="checkLogins" style="font-weight: normal">
                     <input type="checkbox" id="checkLogins" name="checkLogins" <TMPL_IF NAME="ASK_LOGINS">checked</TMPL_IF>/>
                     <lang en="Check my last logins" fr="Voir mes dernières connexions"/>
                 </label>
@@ -51,7 +51,7 @@
 
       <TMPL_IF NAME="DISPLAY_RESETPASSWORD">
          <div class="row">
-            <div class="large-11 columns large-centered" style="text-align: right">
+            <div class="large-11 columns large-centered" style="text-align: center">
                 <a class="center" href="<TMPL_VAR NAME="MAIL_URL"><TMPL_IF NAME="key">?<TMPL_VAR NAME="CHOICE_PARAM">=<TMPL_VAR NAME="key"></TMPL_IF>"><lang en="Reset my password" fr="R&eacute;initialiser mon mot de passe"/></a>
             </div>
          </div>
