@@ -1,6 +1,6 @@
 <TMPL_INCLUDE NAME="ynh-header.tpl">
 
-  <div id="content">
+  <div id="content" style="max-width= 500px;" >
     <div id="content-wrapper" class="stroked padded">
 
     <div class="row">
