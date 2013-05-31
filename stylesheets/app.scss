@@ -2,3 +2,16 @@
 
 /* YunoSite specific */
 
+@media screen and (min-width: 980px) {
+    html {
+        border: 3px solid $black;
+    }
+}
+body {
+    background-color: $lightGrey;
+    font-size: 18px;
+}
+
+#container {
+    padding-top: 20px ;
+}
