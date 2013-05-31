@@ -27,13 +27,19 @@
         </div>
         </TMPL_IF>
 
-        <div class="panel-buttons">
-          <button type="reset" class="negative" tabindex="4">
-            <lang en="Cancel" fr="Annuler" />
-          </button>
-          <button type="submit" class="positive" tabindex="3">
-            <lang en="Connect" fr="Se connecter" />
-          </button>
+        <br />
+
+        <div class="panel-buttons row">
+          <div class="large-6 columns">
+            <div class="btn-container center">
+              <a type="reset" class="big button normal-font strong negative" tabindex="4">
+                <lang en="Cancel" fr="Annuler" />
+              </a>
+              <a type="submit" class="big green button normal-font strong positive" tabindex="3">
+                <lang en="Connect" fr="Se connecter" />
+              </a>
+            </div>
+          </div>
         </div>
 
       <TMPL_IF NAME="DISPLAY_RESETPASSWORD">
