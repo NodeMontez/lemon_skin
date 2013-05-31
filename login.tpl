@@ -1,4 +1,4 @@
-<TMPL_INCLUDE NAME="header.tpl">
+<TMPL_INCLUDE NAME="ynh-header.tpl">
 
   <div id="content">
 

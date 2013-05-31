@@ -5,10 +5,10 @@
         <title><lang en="YunoHost | Authentication" fr="YunoHost | Authentification"/></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    	<meta http-equiv="cache-control" content="no-cache" />
-        <link rel="stylesheet" type="text/css" href="<TMPL_VAR NAME="SKIN_PATH">/<TMPL_VAR NAME="SKIN">/stylesheets/app.css" />
-        <link href="<TMPL_VAR NAME="SKIN_PATH">/<TMPL_VAR NAME="SKIN">/favicon.ico" rel="icon" type="image/x-icon" />
-        <link href="<TMPL_VAR NAME="SKIN_PATH">/<TMPL_VAR NAME="SKIN">/favicon.ico" rel="shortcut icon" />
+	<meta http-equiv="cache-control" content="no-cache" />
+        <link rel="stylesheet" type="text/css" href="<TMPL_VAR NAME="SKIN_PATH">/<TMPL_VAR NAME="SKIN">/css/styles.css" />
+        <link href="<TMPL_VAR NAME="SKIN_PATH">/common/favicon.ico" rel="icon" type="image/x-icon" />
+        <link href="<TMPL_VAR NAME="SKIN_PATH">/common/favicon.ico" rel="shortcut icon" />
         <TMPL_IF NAME="PROVIDERURI">
         <link rel="openid.server" href="<TMPL_VAR NAME="PROVIDERURI">" />
         <link rel="openid2.provider" href="<TMPL_VAR NAME="PROVIDERURI">" />
