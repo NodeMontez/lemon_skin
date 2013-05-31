@@ -8,8 +8,6 @@
     <!-- Authentication loop -->
     <div id="content-left">
 
-      <TMPL_INCLUDE NAME="authmessage.tpl">
-
       <TMPL_IF NAME="LOGIN_INFO">
       <div>
         <TMPL_VAR NAME="LOGIN_INFO">
