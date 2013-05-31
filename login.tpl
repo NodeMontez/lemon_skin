@@ -1,12 +1,12 @@
-<TMPL_INCLUDE NAME="ynh-header.tpl">
+<TMPL_INCLUDE NAME="header.tpl">
 
   <div id="content">
-    <div id="content-wrapper" class="stroked">
 
     <TMPL_IF AUTH_LOOP>
 
     <!-- Authentication loop -->
     <div id="content-left">
+      <div id="content-wrapper" class="stroked">
 
       <TMPL_INCLUDE NAME="authmessage.tpl">
 
@@ -46,11 +46,13 @@
       <input type="hidden" name="timezone" />
       <input type="hidden" id="authKey" name="<TMPL_VAR NAME="CHOICE_PARAM">" value="<TMPL_VAR NAME="key">" />
 
-      <TMPL_IF NAME="standardform">
+      <TMPL_IF NAME="logo">
 
-      <TMPL_INCLUDE NAME="standardform.tpl">
-
-      </TMPL_IF>
+        <TMPL_IF NAME="module">
+        <div class="authLogo">
+        <img src="<TMPL_VAR NAME="SKIN_PATH">/common/<TMPL_VAR NAME="module">.png" />
+        </div>
+        </TMPL_IF>
 
         <TMPL_IF NAME="CHECK_LOGINS">
         <p>
@@ -80,6 +82,8 @@
       </TMPL_LOOP>
 
     </div>
+
+      </TMPL_IF>
 
     <TMPL_IF NAME="DISPLAY_FORM">
 
