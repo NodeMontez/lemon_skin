@@ -1,7 +1,7 @@
 <TMPL_INCLUDE NAME="ynh-header.tpl">
 
-  <div id="content" style="max-width= 500px;" >
-    <div id="content-wrapper" class="stroked padded">
+  <div id="content">
+    <div id="content-wrapper" class="stroked padded" style="max-width: 650px;" >
 
     <div class="row">
     <div class="large-7 large-centered columns">
