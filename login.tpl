@@ -29,6 +29,8 @@
       </div>
 
       <!-- Forms -->
+      <div class="row">
+        <div class="large-6 large-centered">
       <TMPL_LOOP NAME="AUTH_LOOP">
 
       <div id="<TMPL_VAR NAME="key">">
@@ -58,14 +60,10 @@
         </p>
         </TMPL_IF>
 
-        <hr class="solid" />
         <div class="panel-buttons">
-          <button type="reset" class="negative" tabindex="4">
-            <lang en="Cancel" fr="Annuler" />
-          </button>
-          <button type="submit" class="positive" tabindex="3">
-            <lang en="Connect" fr="Se connecter" />
-          </button>
+          <input class="big green button normal-font strong positive" type="submit" tabindex="3">
+            <lang en="Sign in" fr="Connexion" />
+          </input>
         </div>
 
       </TMPL_IF>
@@ -75,6 +73,7 @@
       </div>
 
       </TMPL_LOOP>
+      </div></div>
 
     </div>
 
@@ -88,7 +87,7 @@
     </div>
     </TMPL_IF>
 
-    <h3><lang en="Sign in" fr="Connexion" /></h3>
+    <h4><lang en="Sign in" fr="Connexion" /></h4>
     <div data-alert class="alert-box alert">
       <TMPL_VAR NAME="AUTH_ERROR">
     </div>
