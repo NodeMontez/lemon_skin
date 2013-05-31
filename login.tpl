@@ -1,10 +1,10 @@
 <TMPL_INCLUDE NAME="ynh-header.tpl">
 
   <div id="content">
-    <div id="content-wrapper" class="stroked">
+    <div id="content-wrapper" class="stroked padded">
 
     <div class="row">
-    <div class="large-8 large-centered columns">
+    <div class="large-7 large-centered columns">
     <TMPL_IF NAME="DISPLAY_FORM">
 
     <TMPL_IF NAME="LOGIN_INFO">
