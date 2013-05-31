@@ -18,7 +18,7 @@
         <TMPL_IF NAME="CHECK_LOGINS">
         <div class="row">
             <div class="large-11 columns" style="text-align: right">
-                <label for="checkLogins" style="font-weight: normal">
+                <label id="checkLabel" for="checkLogins" style="font-weight: normal">
                     <input type="checkbox" id="checkLogins" name="checkLogins" <TMPL_IF NAME="ASK_LOGINS">checked</TMPL_IF>/>
                     <lang en="Check my last logins" fr="Voir mes dernières connexions"/>
                 </label>

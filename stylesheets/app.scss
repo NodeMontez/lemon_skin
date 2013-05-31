@@ -17,10 +17,13 @@ body {
 }
 
 @media screen and (max-width: 780px) {
-    input {
-        width: 80%;
-    }
     label {
         text-align: left;
+    }
+    label#checkLabel {
+        display: none;
+    }
+    div#content #content-wrapper {
+        padding: 35px 30px;
     }
 }
