@@ -111,62 +111,6 @@
 
     </TMPL_IF>
 
-    <TMPL_IF NAME="DISPLAY_OPENID_FORM">
-
-    <div id="content-left">
-
-      <TMPL_INCLUDE NAME="authmessage.tpl">
-
-      <TMPL_IF NAME="LOGIN_INFO">
-      <div>
-        <TMPL_VAR NAME="LOGIN_INFO">
-      </div>
-      </TMPL_IF>
-
-    </div>
-
-    <div id="content-right">
-      <h1><lang en="Open your SSO session" fr="Ouvrir une session SSO" /></h1>
-      <hr class="solid" />
-      <p><span class="text-error"><TMPL_VAR NAME="AUTH_ERROR"></span></p>
-      <form action="#" method="post" class="login">
-        <TMPL_VAR NAME="HIDDEN_INPUTS">
-        <input type="hidden" name="url" value="<TMPL_VAR NAME="AUTH_URL">" />
-        <input type="hidden" name="timezone" />
-        <TMPL_INCLUDE NAME="openidform.tpl">
-      </form>
-    </div>
-
-    </TMPL_IF>
-
-    <TMPL_IF NAME="DISPLAY_YUBIKEY_FORM">
-
-    <div id="content-left">
-
-      <TMPL_INCLUDE NAME="authmessage.tpl">
-
-      <TMPL_IF NAME="LOGIN_INFO">
-      <div>
-        <TMPL_VAR NAME="LOGIN_INFO">
-      </div>
-      </TMPL_IF>
-
-    </div>
-
-    <div id="content-right">
-      <h1><lang en="Open your SSO session" fr="Ouvrir une session SSO" /></h1>
-      <hr class="solid" />
-      <p><span class="text-error"><TMPL_VAR NAME="AUTH_ERROR"></span></p>
-      <form action="#" method="post" class="login">
-        <TMPL_VAR NAME="HIDDEN_INPUTS">
-        <input type="hidden" name="url" value="<TMPL_VAR NAME="AUTH_URL">" />
-        <input type="hidden" name="timezone" />
-        <TMPL_INCLUDE NAME="yubikeyform.tpl">
-      </form>
-    </div>
-
-    </TMPL_IF>
-
     <TMPL_IF NAME="DISPLAY_PASSWORD">
 
       <div id="content-all">
