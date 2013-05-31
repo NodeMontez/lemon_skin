@@ -36,7 +36,7 @@
         <TMPL_VAR NAME="MSG">
       </div>
       </TMPL_IF>
-      <p>
+      <p style="padding: 25px">
         <a href="<TMPL_VAR NAME="PORTAL_URL">" class="positive">&larr; <lang en="Sign in" fr="Connexion" /></a>
       </p>
     </div>
