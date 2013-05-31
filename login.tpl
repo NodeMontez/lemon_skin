@@ -14,6 +14,7 @@
     </TMPL_IF>
 
     <h4><lang en="Sign in" fr="Connexion" /></h4>
+    <div class="spacer">
     <div data-alert class="alert-box alert">
       <TMPL_VAR NAME="AUTH_ERROR">
     </div>
