@@ -6,19 +6,17 @@
     <TMPL_IF AUTH_LOOP>
 
     <!-- Authentication loop -->
-    <div id="content-left">
 
-      <TMPL_IF NAME="LOGIN_INFO">
-      <div>
-        <TMPL_VAR NAME="LOGIN_INFO">
-      </div>
-      </TMPL_IF>
-
+    <TMPL_IF NAME="LOGIN_INFO">
+    <div data-alert class="alert-box">
+      <strong>Info:</strong> <TMPL_VAR NAME="LOGIN_INFO">
+      <a href="#" class="close">&times;</a>
     </div>
+    </TMPL_IF>
 
     <div id="content-right">
 
-      <h1><lang en="Open your SSO session" fr="Ouvrir une session SSO" /></h1>
+      <h3><lang en="Sign in" fr="Connexion" /></h3>
       <hr class="solid" />
       <p><span class="text-error"><TMPL_VAR NAME="AUTH_ERROR"></span></p>
 
