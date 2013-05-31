@@ -73,9 +73,7 @@
       </p>
     </div>
     </TMPL_IF>
-    </div>
-    <div class="clear"></div>
-    </div>
+    </div></div>
 
     </div>
   </div>
