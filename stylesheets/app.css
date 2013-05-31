@@ -4230,6 +4230,7 @@ body {
   html {
     border: 3px solid #222222; } }
 /* Clickable elements */
+button,
 .button,
 input[type=submit].button,
 nav.top-bar div.top-bar-section ul li a.button {
@@ -4242,6 +4243,7 @@ nav.top-bar div.top-bar-section ul li a.button {
   border: 3px solid #222222;
   color: #222222;
   padding: 0 10px; }
+  button:not(.normal-font),
   .button:not(.normal-font),
   input[type=submit].button:not(.normal-font),
   nav.top-bar div.top-bar-section ul li a.button:not(.normal-font) {
@@ -4251,10 +4253,12 @@ nav.top-bar div.top-bar-section ul li a.button {
     font-size: 16px;
     font-weight: 700;
     line-height: 26px; }
+  button.strong,
   .button.strong,
   input[type=submit].button.strong,
   nav.top-bar div.top-bar-section ul li a.button.strong {
     font-weight: 700; }
+  button.big,
   .button.big,
   input[type=submit].button.big,
   nav.top-bar div.top-bar-section ul li a.button.big {
@@ -4262,60 +4266,75 @@ nav.top-bar div.top-bar-section ul li a.button {
     padding: 5px 15px;
     letter-spacing: -1px;
     line-height: 35px; }
+  button.red,
   .button.red,
   input[type=submit].button.red,
   nav.top-bar div.top-bar-section ul li a.button.red {
     box-shadow: 5px -5px #fb2f3e, 3px -3px white inset;
     background-color: #fb2f3e; }
-    .button.red:hover, .button.red:active,
+    button.red:hover, button.red:active,
+    .button.red:hover,
+    .button.red:active,
     input[type=submit].button.red:hover,
     input[type=submit].button.red:active,
     nav.top-bar div.top-bar-section ul li a.button.red:hover,
     nav.top-bar div.top-bar-section ul li a.button.red:active {
       background-color: #c00412; }
+  button.blue,
   .button.blue,
   input[type=submit].button.blue,
   nav.top-bar div.top-bar-section ul li a.button.blue {
     box-shadow: 5px -5px #81e6ff, 3px -3px white inset;
     background-color: #81e6ff; }
-    .button.blue:hover, .button.blue:active,
+    button.blue:hover, button.blue:active,
+    .button.blue:hover,
+    .button.blue:active,
     input[type=submit].button.blue:hover,
     input[type=submit].button.blue:active,
     nav.top-bar div.top-bar-section ul li a.button.blue:hover,
     nav.top-bar div.top-bar-section ul li a.button.blue:active {
       background-color: #1bd2ff; }
+  button.yellow,
   .button.yellow,
   input[type=submit].button.yellow,
   nav.top-bar div.top-bar-section ul li a.button.yellow {
     box-shadow: 5px -5px #ffe680, 3px -3px white inset;
     background-color: #ffe680; }
-    .button.yellow:hover, .button.yellow:active,
+    button.yellow:hover, button.yellow:active,
+    .button.yellow:hover,
+    .button.yellow:active,
     input[type=submit].button.yellow:hover,
     input[type=submit].button.yellow:active,
     nav.top-bar div.top-bar-section ul li a.button.yellow:hover,
     nav.top-bar div.top-bar-section ul li a.button.yellow:active {
       background-color: #ffd21a; }
+  button.green,
   .button.green,
   input[type=submit].button.green,
   nav.top-bar div.top-bar-section ul li a.button.green {
     box-shadow: 5px -5px #81ff90, 3px -3px white inset;
     background-color: #81ff90; }
-    .button.green:hover, .button.green:active,
+    button.green:hover, button.green:active,
+    .button.green:hover,
+    .button.green:active,
     input[type=submit].button.green:hover,
     input[type=submit].button.green:active,
     nav.top-bar div.top-bar-section ul li a.button.green:hover,
     nav.top-bar div.top-bar-section ul li a.button.green:active {
       background-color: #1bff36; }
+  button:focus,
   .button:focus,
   input[type=submit].button:focus,
   nav.top-bar div.top-bar-section ul li a.button:focus {
     background-color: inherit;
     color: #222222; }
+  button:active,
   .button:active,
   input[type=submit].button:active,
   nav.top-bar div.top-bar-section ul li a.button:active {
     color: #222222;
     box-shadow: none; }
+  button:hover,
   .button:hover,
   input[type=submit].button:hover,
   nav.top-bar div.top-bar-section ul li a.button:hover {
@@ -4666,96 +4685,3 @@ div {
     margin-left: 0px;
     margin-right: 0px; } }
 /* YunoSite specific */
-@media screen and (min-width: 980px) {
-  html {
-    border: 3px solid #222222; } }
-body {
-  background-color: #cccccc;
-  font-size: 18px; }
-
-.loader {
-  height: 200px;
-  width: 100%;
-  background: transparent url("/public/images/ajax-loader.gif") no-repeat center; }
-
-.add-btn-container {
-  margin: 0 60px 0 35px; }
-
-#addButton {
-  padding: 20px 15px;
-  font-size: 17px; }
-  #addButton div {
-    font-size: 100px;
-    line-height: 80px;
-    height: 80px;
-    width: 80px; }
-
-.pagination {
-  margin: 30px 0 0;
-  font-size: 20px;
-  line-height: 25px; }
-  .pagination li a {
-    color: #222222;
-    font-weight: 700;
-    margin: 0 3px 0 3px; }
-    .pagination li a:hover, .pagination li a:focus {
-      border: 3px solid #222222;
-      background-color: white;
-      margin: -3px 0 -3px 0; }
-  .pagination li.arrow.unavailable a {
-    color: #aaaaaa; }
-  .pagination li.current a {
-    margin: -3px 0 -3px 0;
-    background-color: #fb2f3e;
-    color: #222222; }
-    .pagination li.current a:hover, .pagination li.current a:focus {
-      background-color: white; }
-
-@media screen and (max-width: 820px) {
-  #addForm {
-    width: 90%;
-    margin-left: -45%; } }
-@media screen and (max-width: 980px) {
-  .large-9.list {
-    width: 100%; }
-
-  #poc {
-    display: none;
-    width: 0;
-    height: 0; } }
-#container {
-  padding-top: 20px; }
-
-.grid-list {
-  padding-top: 20px; }
-  .grid-list li {
-    padding: 0 10px;
-    width: 45%; }
-    .grid-list li div.user-container {
-      height: 100%; }
-      .grid-list li div.user-container a {
-        width: 100%; }
-        .grid-list li div.user-container a div.user-infos {
-          margin: 13px 0 0 20px; }
-          .grid-list li div.user-container a div.user-infos div {
-            margin: 5px 0 9px; }
-            @media screen and (min-width: 820px) {
-              .grid-list li div.user-container a div.user-infos div {
-                max-width: 175px;
-                max-height: 22px;
-                overflow: hidden; } }
-            .grid-list li div.user-container a div.user-infos div span.user-username {
-              font-weight: 700; }
-            .grid-list li div.user-container a div.user-infos div span.user-fullname {
-              font-size: 80%; }
-    @media screen and (max-width: 820px) {
-      .grid-list li {
-        display: block;
-        width: 98%;
-        margin: 0 20px; } }
-
-.info-list div {
-  padding-top: 5px; }
-.info-list div.mail-list a:not(:last-of-type):after {
-  content: ", ";
-  color: #222222; }

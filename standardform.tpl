@@ -34,14 +34,14 @@
           <div class="large-1 columns">&nbsp;</div>
           <div class="large-5 columns">
             <div class="btn-container center">
-              <a type="reset" class="big button normal-font strong negative" tabindex="4">
+              <button type="reset" class="big button normal-font strong negative" tabindex="4">
                 <lang en="Cancel" fr="Annuler" />
               </a>
             </div>
           </div>
           <div class="large-5 columns">
             <div class="btn-container center">
-              <a type="submit" class="big green button normal-font strong positive" tabindex="3">
+              <button type="submit" class="big green button normal-font strong positive" tabindex="3">
                 <lang en="Connect" fr="Se connecter" />
               </a>
             </div>
