@@ -26,52 +26,22 @@
 
     </TMPL_IF>
 
-    <TMPL_IF NAME="DISPLAY_PASSWORD">
-
-      <div id="content-all">
-      <div class="title">
-        <img src="<TMPL_VAR NAME="SKIN_PATH">/<TMPL_VAR NAME="SKIN">/images/logo-info.png" />
-        <lang en="Password change" fr="Changement de mot de passe" />
-      </div>
-      <hr class="solid" />
-      <p class="text-error"><TMPL_VAR NAME="AUTH_ERROR"></p>
-      <TMPL_INCLUDE NAME="password.tpl">
-      </div>
-
-    </TMPL_IF>
-
     <TMPL_IF NAME="PORTAL_URL">
     <div id="content-all">
-      <div class="title">
-        <img src="<TMPL_VAR NAME="SKIN_PATH">/<TMPL_VAR NAME="SKIN">/images/logo-info.png" />
-        <lang en="SSO session inactive" fr="Session SSO inactive" />
+      <div data-alert class="alert-box">
+        <strong>Info:</strong> <TMPL_VAR NAME="AUTH_ERROR">
       </div>
-      <hr class="solid" />
-      <p class="text-error"><TMPL_VAR NAME="AUTH_ERROR"></p>
       <TMPL_IF NAME="MSG">
       <div id="content-all-info">
         <TMPL_VAR NAME="MSG">
       </div>
       </TMPL_IF>
       <p>
-        <img src="<TMPL_VAR NAME="SKIN_PATH">/<TMPL_VAR NAME="SKIN">/images/arrow.png" /><a href="<TMPL_VAR NAME="PORTAL_URL">" class="positive"><lang en="Go to portal" fr="Aller au portail" /></a>
+        <a href="<TMPL_VAR NAME="PORTAL_URL">" class="positive">&larr; <lang en="Sign in" fr="Connexion" /></a>
       </p>
     </div>
     </TMPL_IF>
 
-    <TMPL_IF NAME="LOGOUT_URL">
-    <div id="content-all">
-      <div class="title">
-        <img src="<TMPL_VAR NAME="SKIN_PATH">/<TMPL_VAR NAME="SKIN">/images/logo-info.png" />
-        <lang en="Close your SSO session" fr="Fermer votre Session SSO" />
-      </div>
-      <hr class="solid" />
-      <p class="text-error"><TMPL_VAR NAME="AUTH_ERROR"></p>
-      <p>
-        <img src="<TMPL_VAR NAME="SKIN_PATH">/<TMPL_VAR NAME="SKIN">/images/arrow.png" /><a href="<TMPL_VAR NAME="LOGOUT_URL">" class="negative"><lang en="Logout" fr="Se d&eacute;connecter"/></a>
-      </p>
-    </div>
-    </TMPL_IF>
     </div>
     </div>
 
