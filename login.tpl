@@ -1,12 +1,12 @@
-<TMPL_INCLUDE NAME="header.tpl">
+<TMPL_INCLUDE NAME="ynh-header.tpl">
 
   <div id="content">
+    <div id="content-wrapper" class="stroked">
 
     <TMPL_IF AUTH_LOOP>
 
     <!-- Authentication loop -->
     <div id="content-left">
-      <div id="content-wrapper" class="stroked">
 
       <TMPL_INCLUDE NAME="authmessage.tpl">
 
