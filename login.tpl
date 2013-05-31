@@ -4,7 +4,7 @@
     <div id="content-wrapper" class="stroked">
 
     <div class="row">
-    <div class="large-6 large-centered">
+    <div class="large-6 large-centered columns">
     <TMPL_IF NAME="DISPLAY_FORM">
 
     <TMPL_IF NAME="LOGIN_INFO">
