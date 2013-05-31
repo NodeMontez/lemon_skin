@@ -52,7 +52,7 @@
       <TMPL_IF NAME="DISPLAY_RESETPASSWORD">
          <div class="row">
             <div class="large-11 columns large-centered" style="text-align: center">
-                <a class="center" href="<TMPL_VAR NAME="MAIL_URL"><TMPL_IF NAME="key">?<TMPL_VAR NAME="CHOICE_PARAM">=<TMPL_VAR NAME="key"></TMPL_IF>"><lang en="Reset my password" fr="R&eacute;initialiser mon mot de passe"/></a>
+                <a class="center" href="<TMPL_VAR NAME="MAIL_URL"><TMPL_IF NAME="key">?<TMPL_VAR NAME="CHOICE_PARAM">=<TMPL_VAR NAME="key"></TMPL_IF>"><lang en="Forgot your password ?" fr="Mot de passe oublié ?"/></a>
             </div>
          </div>
       </TMPL_IF>
