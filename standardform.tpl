@@ -16,12 +16,15 @@
         </div>
 
         <TMPL_IF NAME="CHECK_LOGINS">
-        <p class="center">
-        <label for="checkLogins">
-            <input type="checkbox" id="checkLogins" name="checkLogins" <TMPL_IF NAME="ASK_LOGINS">checked</TMPL_IF>/>
-            <lang en="Check my last logins" fr="Voir mes dernières connexions"/>
-        </label>
-        </p>
+        <div class="row">
+            <div class="large-11 columns" style="text-align: right">
+                <label for="checkLogins">
+                    <input type="checkbox" id="checkLogins" name="checkLogins" <TMPL_IF NAME="ASK_LOGINS">checked</TMPL_IF>/>
+                    <lang en="Check my last logins" fr="Voir mes dernières connexions"/>
+                </label>
+            </div>
+            <div class="large-1 columns"></div>
+        </div>
         </TMPL_IF>
 
         <div class="panel-buttons">
