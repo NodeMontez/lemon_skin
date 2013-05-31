@@ -1,6 +1,7 @@
 <TMPL_INCLUDE NAME="ynh-header.tpl">
 
   <div id="content">
+    <div id="content-wrapper" class="stroked">
 
     <TMPL_IF AUTH_LOOP>
 
@@ -79,8 +80,6 @@
       </TMPL_LOOP>
 
     </div>
-
-      </TMPL_IF>
 
     <TMPL_IF NAME="DISPLAY_FORM">
 
@@ -213,6 +212,7 @@
     </div>
     </TMPL_IF>
 
+    </div>
   </div>
 
 <TMPL_INCLUDE NAME="footer.tpl">
