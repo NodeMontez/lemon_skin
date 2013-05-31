@@ -1,13 +1,12 @@
 <TMPL_INCLUDE NAME="ynh-header.tpl">
 
   <div id="content">
+    <div id="content-wrapper" class="stroked">
 
     <TMPL_IF AUTH_LOOP>
 
     <!-- Authentication loop -->
     <div id="content-left">
-
-      <TMPL_INCLUDE NAME="authmessage.tpl">
 
       <TMPL_IF NAME="LOGIN_INFO">
       <div>
@@ -213,6 +212,7 @@
     </div>
     </TMPL_IF>
 
+  </div>
   </div>
 
 <TMPL_INCLUDE NAME="footer.tpl">
