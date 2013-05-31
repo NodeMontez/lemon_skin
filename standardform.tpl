@@ -35,6 +35,10 @@
               <a type="reset" class="big button normal-font strong negative" tabindex="4">
                 <lang en="Cancel" fr="Annuler" />
               </a>
+            </div>
+          </div>
+          <div class="large-6 columns">
+            <div class="btn-container center">
               <a type="submit" class="big green button normal-font strong positive" tabindex="3">
                 <lang en="Connect" fr="Se connecter" />
               </a>
