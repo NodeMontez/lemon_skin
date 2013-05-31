@@ -51,26 +51,6 @@
 
       </TMPL_IF>
 
-      <TMPL_IF NAME="openidform">
-
-      <TMPL_INCLUDE NAME="openidform.tpl">
-
-      </TMPL_IF>
-
-      <TMPL_IF NAME="yubikeyform">
-
-      <TMPL_INCLUDE NAME="yubikeyform.tpl">
-
-      </TMPL_IF>
-
-      <TMPL_IF NAME="logo">
-
-        <TMPL_IF NAME="module">
-        <div class="authLogo">
-        <img src="<TMPL_VAR NAME="SKIN_PATH">/common/<TMPL_VAR NAME="module">.png" />
-        </div>
-        </TMPL_IF>
-
         <TMPL_IF NAME="CHECK_LOGINS">
         <p>
         <label for="checkLogins">
